@@ -3,12 +3,12 @@ linters:
     display_cop_names: true
 files:
   ignore:
-    - "reddit/bin/*"
-    - "reddit/db/**"
-    - "reddit/config/*"
-    - "reddit/Guardfile"
-    - "reddit/Rakefile"
-    - "reddit/config/environments/production.rb"
-    - "reddit/config/environments/test.rb"
-    - "reddit/config/environments/puma.rb"
-    - "reddit/config/environments/spring.rb"
+    - "re-form/bin/*"
+    - "re-form/db/**"
+    - "re-form/config/*"
+    - "re-form/Guardfile"
+    - "re-form/Rakefile"
+    - "re-form/config/environments/production.rb"
+    - "re-form/config/environments/test.rb"
+    - "re-form/config/environments/puma.rb"
+    - "re-form/config/environments/spring.rb"
