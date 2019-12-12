@@ -12,3 +12,6 @@ files:
     - "re-form/config/environments/test.rb"
     - "re-form/config/environments/puma.rb"
     - "re-form/config/environments/spring.rb"
+  AllCops:
+  Documentation:
+    Enabled: false
