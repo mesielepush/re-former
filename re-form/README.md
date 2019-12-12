@@ -3,10 +3,10 @@ This project is about building a form the old fashioned way and then the Rails w
 
 
 ## Built With:
-ruby 2.6.3, rails 5.2.3
+ruby 2.6.3, rails 6.0.1
 
 ## Author
-Jonathan Marín
+Jonathan Marín https://github.com/mesielepush
 
 ## Getting started
 
