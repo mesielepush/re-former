@@ -1,0 +1,14 @@
+linters:
+  rubocop:
+    display_cop_names: true
+files:
+  ignore:
+    - "reddit/bin/*"
+    - "reddit/db/**"
+    - "reddit/config/*"
+    - "reddit/Guardfile"
+    - "reddit/Rakefile"
+    - "reddit/config/environments/production.rb"
+    - "reddit/config/environments/test.rb"
+    - "reddit/config/environments/puma.rb"
+    - "reddit/config/environments/spring.rb"
