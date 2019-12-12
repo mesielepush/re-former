@@ -2,13 +2,25 @@
 <h1>New User</h1>
 <div>
 <%= form_for(@user) do |f| %>
-    <%= f.label :username, "User Name" %>
-    <%= f.text_field :username, value: "name here" %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+        <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+        <ul>
+            <% @user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+            <% end %>
+        </ul>
+        </div>
+    <% end %>
+    <%= f.label :name, "User Name" %>
+    <%= f.text_field :name, value: "name" %>
     <%= f.label :email %>
     <%= f.email_field :email, placeholder: "mail" %>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-    <%= f.submit "Create" %>
+    <label for="password">Password: </label> 
+    <input type="password" name="password">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <%= f.submit "create" %>
 <% end %>
 </div>
 
