@@ -1,0 +1,17 @@
+linters:
+  rubocop:
+    display_cop_names: true
+files:
+  ignore:
+    - "re-form/bin/*"
+    - "re-form/db/**"
+    - "re-form/config/*"
+    - "re-form/Guardfile"
+    - "re-form/Rakefile"
+    - "re-form/config/environments/production.rb"
+    - "re-form/config/environments/test.rb"
+    - "re-form/config/environments/puma.rb"
+    - "re-form/config/environments/spring.rb"
+  AllCops:
+  Documentation:
+    Enabled: false

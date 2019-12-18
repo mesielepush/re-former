@@ -1,0 +1,31 @@
+<h1>Edit User</h1>
+<%= form_for @user, url: {action: "update"} do |f| %>
+    <ul class="errors">
+        <% @user.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+        <% end %>
+    </ul>
+    <ul class="success">
+        <% flash.each do |message_type, message| %>
+        <%= content_tag(:li, message, class:"#{message_type}") %>
+        <% end %>
+    </ul>
+    <%= f.label :name, "Your user name here" %>
+    <%= content_tag(:br) %>
+    <%= f.text_field :name, value: @user.name %>
+    <%= content_tag(:br) %>
+
+
+    <%= f.label :email %>
+    <%= content_tag(:br) %>
+    <%= f.email_field :email, placeholder: "example@example.com" %>
+    <%= content_tag(:br) %>
+
+
+    <%= f.label :password %>
+    <%= content_tag(:br) %>
+    <%= f.password_field :password %>
+    <%= content_tag(:br) %>
+
+    <%= f.submit "Edit User" %>
+<% end %>
