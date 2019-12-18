@@ -20,7 +20,12 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def update; end
+  def update
+    @user = User.find(params[:id])
+    flash[:success] = '...Updated succesfully...' if @user.update(user_params)
+
+    render :edit
+  end
 
   private
 
